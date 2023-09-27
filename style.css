@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 15px;
+  overflow: hidden;
+  animation:backInDown 1s;
+}
+
+h1 {
+  color: #fff;
+  margin: 10px 0;
+  animation:rubberBand 2s infinite;
+}
+
+.progress {
+  height: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.progress--bar {
+  background-color: #00ff00;
+  height: 100%;
+  transition: all ease 0.5s;
+}
+
+.questionArea,
+.scoreArea {
+  display: none;
+}
+
+.scoreArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.questionArea {
+  max-width: 500px;
+  width: 100%;
+}
+
+.question {
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+  animation:jackInTheBox 0.5s;
+}
+.option {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  color: #000000;
+  font-size: 16px;
+  cursor: pointer;
+  animation:jackInTheBox 0.5s;
+}
+.option span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.918);
+  color: #ffffff;
+}
+.option:hover {
+  background-color: rgb(109, 99, 99);
+}
+
+.scoreArea {
+  display: none;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  animation:tada 1s;
+}
+iframe {
+  width: 100%;
+  user-select: none;
+}
+
+.prizeGif {
+  display: flex;
+}
+.badGif {
+  display: none;
+}
+.goodGif {
+  display: none;
+}
+.prizeImage {
+  width: auto;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.goodImage {
+  display: none;
+  width: auto;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.badImage {
+  display: none;
+  width: auto;
+  height: 50px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+.scoreText1 {
+  color: #000;
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.scorePct {
+  color: #0d630d;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.scoreText2 {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.scoreArea button {
+  border: 0;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.971);
+  color: #ccc;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.scoreArea button:hover {
+  background-color: rgba(0, 0, 0, 0.878);
+}
+
+footer {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+footer a {
+  color: #fff;
+  font-size: 15px;
+}
+
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+    <div class="progress">
+      <div class="progress--bar"></div>
+    </div>
+
+    <h1>Quiz</h1>
+
+    <div class="questionArea">
+      <div class="question">...</div>
+      <div class="options"></div>
+    </div>
+
+    <div class="scoreArea">
+      <div class="badGif">
+        <iframe
+          src="https://giphy.com/embed/3oFzmko6SiknmpR2NO"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+        <p></p>
+      </div>
+      <div class="goodGif">
+        <iframe
+          src="https://giphy.com/embed/tIeCLkB8geYtW"
+          frameborder="none"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="prizeGif">
+        <iframe
+          src="https://giphy.com/embed/cQNRp4QA8z7B6"
+          frameborder="0"
+          class="giphy-embed"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <img src="prize.gif" class="prizeImage" />
+      <img src="good.gif" class="goodImage" />
+      <img src="bad.gif" class="badImage" />
+      <div class="scoreText1">Parabéns!</div>
+      <div class="scorePct">Acertou 99%</div>
+      <div class="scoreText2">Você respondeu 9 questões e acertou 8.</div>
+      <button>Fazer novamente</button>
+    </div>
+
+    <footer>
+      Criado por <a href="https://www.linkedin.com/in/elias379/">Elias</a>
+    </footer>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
