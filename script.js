@@ -87,7 +87,6 @@ function resetEvent() {
       scoreArea.addEventListener('animationend', () => {
         correctAnswers = 0;
         currentQuestion = 0;
-        showQuestion();
         window.location.reload(true);
       });
 }
