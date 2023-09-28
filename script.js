@@ -1,7 +1,8 @@
 // Initial Data
 let currentQuestion = 0;
 let correctAnswers = 0;
-let scoreArea =   document.querySelector('.scoreArea')
+let scoreArea =   document.querySelector('.scoreArea');
+let body = document.querySelector('body')
 showQuestion();
 
 // Events
@@ -13,7 +14,8 @@ function showQuestion() {
         let q = questions[currentQuestion];
 
         let pct = Math.floor((currentQuestion / questions.length) * 100);
-        document.querySelector('.progress--bar').style.width = `${pct}%`;
+        document.querySelector('.progress--bar').style.width = `${pct + 10}%`;
+        document.querySelector('.progress--bar').innerHTML = `${pct}%`;
 
         document.querySelector('.scoreArea').style.display = 'none';
         document.querySelector('.questionArea').style.display = 'block';
@@ -78,15 +80,17 @@ function finishQuiz() {
     document.querySelector('.scoreArea').style.display = 'flex';
     document.querySelector('.questionArea').style.display = 'none';
     document.querySelector('.progress--bar').style.width = '100%';
+    document.querySelector('.progress--bar').innerHTML = `${'Concluído'} ${'100%'}`;
 }
 
 
 function resetEvent() {
-  scoreArea.classList.add('animate__animated', 'animate__zoomOutDown');
-  scoreArea.style.setProperty('--animate-duration', '2s');
-      scoreArea.addEventListener('animationend', () => {
+  body.classList.add('animate__animated', 'animate__backOutUp');
+  body.style.setProperty('--animate-duration', '1s');
+      body.addEventListener('animationend', () => {
         correctAnswers = 0;
         currentQuestion = 0;
-        window.location.reload(true);
+        showQuestion();
+        window.location.reload(true)
       });
 }
