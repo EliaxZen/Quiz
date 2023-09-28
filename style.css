@@ -10,7 +10,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #000000;
+  background-image: url(/1314309.jpg);
+  background-size: cover;
+  background-position: center;
   font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
   overflow: hidden;
