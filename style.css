@@ -14,26 +14,40 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding: 15px;
   overflow: hidden;
-  animation:backInDown 2s;
+  animation:backInDown 1s;
+}
+img {
+  height: 60px;
+}
+.quiz {
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: #fff;
-  margin: 10px 0;
+  margin: 10px 10px;
   animation:rubberBand 2s infinite;
 }
 
 .progress {
-  height: 5px;
+  height: 20px;
   position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
+  left: 15px;
+  top: 10px;
+  right: 15px;
+  border-radius: 30px;
+  background-color: #FFF;
 }
 .progress--bar {
   background-color: #00ff00;
   height: 100%;
   transition: all ease 0.5s;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .questionArea,
@@ -51,6 +65,7 @@ h1 {
 .questionArea {
   max-width: 500px;
   width: 100%;
+
 }
 
 .question {
@@ -170,5 +185,8 @@ footer a {
   color: #fff;
   font-size: 15px;
 }
+
+
+
 
 
