@@ -74,7 +74,7 @@ function finishQuiz() {
       document.querySelector('.prizeGif').style.display = 'flex';
     }
 
-    document.querySelector('.scorePct').innerHTML = `Acertou ${points}%`;
+    document.querySelector('.scorePct').innerHTML = `${points}% de acertos`;
     document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${correctAnswers}.`;
 
     document.querySelector('.scoreArea').style.display = 'flex';
